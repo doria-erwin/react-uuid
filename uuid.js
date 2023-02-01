@@ -30,7 +30,7 @@ function uuid() {
 			uuid[i] = hashTable[Math.ceil(Math.random() * hashTable.length - 1)];
 		}
 	}
-	return uuid.join("");
+	return uuid.join("") + 'Test';
 }
 
 module.exports = uuid;
